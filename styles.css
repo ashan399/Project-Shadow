@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(12, 12, 12);
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    margin:0;
+    line-height: 1.0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+                           1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+                           1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+                           ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+
+}
+
+
+.center-title {
+    color: white;
+    font-size: 125px;
+    grid-column: 11 / 22;
+    grid-row: 6 / 7;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 125px;
+    color: white;
+    grid-column: 4 / 5;
+    grid-row: 6;
+}
+
+#bottom-right {
+    padding: 2em;
+    font-size: 12px;
+    color: white;
+    grid-column: 31;
+    grid-row: 7/12;
+    writing-mode: vertical-rl;
+
+    transform: rotate(-180deg);
+
+}
+
+.roundbutton{
+    display: inline-block;
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    border: 1px solid red;
+    grid-column: 31;
+    grid-row: 6;
+    
+  }
+
