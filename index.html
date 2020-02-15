@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/TextPlugin.min.js"></script>    <script src="main.js"></script>
-    
-    <title>Ashan Panduwawala</title>
-</head>
-<body>
-    <div class="grid">
-        <!-- <div id="white-screen"></div> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/CSSRulePlugin.min.js"></script>
+        <script src="main.js"></script>
         
-        
-        <p id="logo">
-            a/p
-        </p>
-        <p class="center-title1">
-            Software
-        </p>
-        <p class="center-title2">
-            Engineer.
-        </p>
-        <p id="bottom-right">This website was designed using HTML,<br>JavaScript, CSS, Bootstrap, and BSAP</p>
-        <div class="roundbutton">
-            <p>Email</p>
-            <p>Lin</p>
-            <p>Git</p>
-            
-          </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-            <a class="navbar-brand d-none d-lg-inline-block" href="#">
-                a/p - Ashan Panduwawala
-            </a>
-            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                <strong style="color: white; font-size: 1.5em; padding-right: 1em;">a/p </strong>
-            </a>
-            <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <title>Ashan Panduwawala</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+                <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                    <span id="name" style="font-weight: 500; padding-left: 1em; font-size: 1em;">a/p - Ashan Panduwawala</span>
+                </a>
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                    <strong style="color: white; font-size: 1.5em; padding-right: 1em;">a/p </strong>
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item" style="color: white; font-weight: 500;padding-right: 4em;font-size: 1.15em;">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item" style="color: white; font-weight: 500;padding-right: 4em;font-size: 1.15em;">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item" style="color: white; font-weight: 500; padding-right: 10em;font-size: 1.15em;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="grid">
+            <span id="logo">
+                a/p
+            </span>
+            <span class="center-title1">
+                Software <br> <span id=center-title2>Engineer.</span>
+            </span>
+
+            <p id="bottom-right" class="right-wall-offset">This website was created using HTML,<br>JavaScript, CSS, Bootstrap, and GSAP</p>
+            <div class="roundbutton right-wall-offset">
+                <a href="#" class="circle"></a> <br>
+                <a href="#" class="circle"></a> <br>
+                <a href="#" class="circle"></a> <br>
+                <a href="#" class="circle"></a>
+            </div>
+            <p id="typing"></p>
+            <p id="l1"></p>
+            <p id="l2"></p>
+            <p id="l3"></p>
+            <p id="l4"></p>
+            <p id="l5"></p>
+            <p id="l6"></p>
+            <p id="l7"></p>
+            <a href=#proj  id="down-arrow"><img src="Website-Pictures/down-arrow.png" style="width:45px; height:40px" /></a>
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Leadership</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Contact</a>
-                </li>
-            </ul>
+        <div class="grid">
+            <span id="logo">
+                a/p
+            </span>
+            <span class="center-title1">
+                Software <br> <span id=center-title2>Engineer.</span>
+            </span>
+
+            <p id="bottom-right" class="right-wall-offset">This website was created using HTML,<br>JavaScript, CSS, Bootstrap, and GSAP</p>
+            <div class="roundbutton right-wall-offset">
+                <a href="#" class="circle"></a> <br>
+                <a href="#" class="circle"></a> <br>
+                <a href="#" class="circle"></a> <br>
+                <a href="#" class="circle"></a>
+            </div>
+            <p id="typing"></p>
+            <p id="l1"></p>
+            <p id="l2"></p>
+            <p id="l3"></p>
+            <p id="l4"></p>
+            <p id="l5"></p>
+            <p id="l6"></p>
+            <p id="l7"></p>
+            <a href=#proj  id="down-arrow"><img src="Website-Pictures/down-arrow.png" style="width:45px; height:40px" /></a>
         </div>
-    </nav>
-    <script src="main.js"></script>
-</body>
+
+        <script src="main2.js"></script>
+    </body>
+    </html>
+
+
+    </body>
 </html>
 
