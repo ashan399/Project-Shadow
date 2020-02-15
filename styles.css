@@ -1,14 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(9, 9, 9);
     cursor: crosshair;
+    box-sizing: border-box;
+    color: white;
 }
 body {
     font-family: 'Overpass', sans-serif;
     margin:0;
     line-height: 1.0;
     overflow-x: hidden;
+    overflow-y: clip;
 }
 .grid {
     display: grid;
@@ -21,15 +24,22 @@ body {
 
 }
 
-
+#name {
+    font-weight: 500; 
+    padding-left: 1em; 
+    font-size: 1em; 
+}
+#logo-short-top-left {
+    font-size: 1.5em; 
+    padding-right: 1em;
+}
 .center-title1 {
     padding-top: 0.5em;
     line-height: 1.1;
-    color: white;
     font-size: 125px;
     grid-column: 13 / 22;
     grid-row: 4 / 6;
-    background-color: transparent;
+    background-color: rgb(9, 9, 9);
 }
 
 
@@ -37,15 +47,14 @@ body {
     z-index: 1000;
     padding-top: 1.5em;
     font-size: 125px;
-    color: white;
     grid-column: 4 / 6;
     grid-row: 1 / 6;
 }
 
 #bottom-right {
     padding-top:1em;
-    font-size: 12px;
-    color: white;
+    font-size: .75em;
+    /* font-weight: 200; */
     grid-column: 31;
     grid-row: 6/12;
     writing-mode: vertical-rl;
@@ -55,16 +64,19 @@ body {
 }
 
 .roundbutton{
+    margin-top:30vh;
+    margin-left: 92vw;
+    position: fixed;
     align-items: right;
     justify-content: end;
     font-size: 12px;
-    grid-column: 31;
-    grid-row: 5 / 6;
+    /* grid-column: 31;
+    grid-row: 5 / 6; */
     background-color: rgba(39, 39, 39, 0);
   }
   
 .circle {
-    justify-content: right;
+    /* justify-content: right; */
     margin-top: 2.5em;
     margin-right: 0;
     width: 3em;
@@ -82,61 +94,109 @@ body {
     display:inline-block;
     width: 10em;
     border-width: .1em;
-    color: white;
 }
 
 
 #typing {
-    color: white;
-    font-size: 12px;
+    font-size: .75em;
     grid-row: 10;
-    grid-column: 3 / 7;
-    color: white;
+    grid-column: 3 / 8;
     z-index: 0;
 }
 #l1 {
     grid-row: 11 / 12;
     grid-column: 1;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 #l2 {
     grid-row: 11 / 12;
     grid-column: 2;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 #l3 {
     grid-row: 11 / 12;
     grid-column: 3;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 #l4 {
     grid-row: 11 / 12;
     grid-column: 4;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 #l5 {
     grid-row: 11 / 12;
     grid-column: 5;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 #l6 {
     grid-row: 11 / 12;
     grid-column: 6;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 #l7 {
     grid-row: 11 / 12;
     grid-column: 7;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 #down-arrow {
+    padding-left: .2em;
     padding-top: 0.5em;
     line-height: 1.1;
-    color: white;
     font-size: 125px;
-    grid-column: 17;
+    grid-column: 16;
     grid-row: 10;
     background-color: transparent;
+}
+
+/* PAGE 2 */
+.sticky {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#box {
+    width: 25vh;
+    height: 25vh;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#about {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* PAGE 3 */
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-description {
+    flex:1
+}
+
+.has-margin-right {
+    margin-right: 5rem;
 }
