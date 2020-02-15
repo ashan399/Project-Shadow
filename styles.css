@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(10, 10, 10);
     cursor: crosshair;
     box-sizing: border-box;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 body {
     font-family: 'Overpass', sans-serif;
@@ -39,7 +39,7 @@ body {
     font-size: 125px;
     grid-column: 13 / 22;
     grid-row: 4 / 6;
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(10, 10, 10);
 }
 
 
@@ -199,4 +199,10 @@ body {
 
 .has-margin-right {
     margin-right: 5rem;
+}
+
+
+.img-item {
+    width: 40rem;
+    height: 20rem;
 }
